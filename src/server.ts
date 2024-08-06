@@ -13,7 +13,7 @@ const wss = new WebSocketServer({server});
 wss.on('connection', (ws: WebSocket) => {
     console.log('A new client connected!');
     ws.on('message', (data: WebSocket.RawData, isBinary: boolean) => {
-        console.log("rowData", data)
+        console.log("rowData Buffer", data)
     });
 
 
